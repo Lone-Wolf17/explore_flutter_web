@@ -1,4 +1,4 @@
-import 'package:explore_flutter_web/views/home_page.dart';
+import 'package:explore_flutter_web/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

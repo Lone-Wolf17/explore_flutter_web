@@ -1,6 +1,8 @@
 import 'package:explore_flutter_web/constants/app_constants.dart';
+import 'package:explore_flutter_web/widgets/bottom_bar.dart';
 import 'package:explore_flutter_web/widgets/destination_carousel.dart';
 import 'package:explore_flutter_web/widgets/destination_heading.dart';
+import 'package:explore_flutter_web/widgets/explore_drawer.dart';
 import 'package:explore_flutter_web/widgets/featured_heading.dart';
 import 'package:explore_flutter_web/widgets/featured_tiles.dart';
 import 'package:explore_flutter_web/widgets/floating_quick_access_bar.dart';
@@ -41,6 +43,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
+      drawer: const ExploreDrawer(),
       appBar: ResponsiveWidget.isSmallScreen(context)
           ? AppBar(
               backgroundColor: Colors.blueGrey.shade900.withOpacity(_opacity),
@@ -85,6 +88,8 @@ class _HomePageState extends State<HomePage> {
             ]),
             DestinationHeading(screenSize: screenSize),
             const DestinationCarousel(),
+            SizedBox(height: screenSize.height / 10),
+            const BottomBar()
           ],
         ),
 
