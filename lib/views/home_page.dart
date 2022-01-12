@@ -1,4 +1,6 @@
 import 'package:explore_flutter_web/constants/app_constanst.dart';
+import 'package:explore_flutter_web/widgets/featured_heading.dart';
+import 'package:explore_flutter_web/widgets/featured_tiles.dart';
 import 'package:explore_flutter_web/widgets/floating_quick_access_bar.dart';
 import 'package:explore_flutter_web/widgets/responsive_widget.dart';
 import 'package:explore_flutter_web/widgets/top_bar_contents.dart';
@@ -69,6 +71,13 @@ class _HomePageState extends State<HomePage> {
               Column(
                 children: [
                   FloatingQuickAccessBar(screenSize: screenSize),
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      FeaturedHeading(screenSize: screenSize),
+                      FeaturedTiles(screenSize: screenSize)
+                    ],
+                  )
                 ],
               )
             ]),
