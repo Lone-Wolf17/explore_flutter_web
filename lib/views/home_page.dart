@@ -1,4 +1,6 @@
-import 'package:explore_flutter_web/constants/app_constanst.dart';
+import 'package:explore_flutter_web/constants/app_constants.dart';
+import 'package:explore_flutter_web/widgets/destination_carousel.dart';
+import 'package:explore_flutter_web/widgets/destination_heading.dart';
 import 'package:explore_flutter_web/widgets/featured_heading.dart';
 import 'package:explore_flutter_web/widgets/featured_tiles.dart';
 import 'package:explore_flutter_web/widgets/floating_quick_access_bar.dart';
@@ -81,6 +83,8 @@ class _HomePageState extends State<HomePage> {
                 ],
               )
             ]),
+            DestinationHeading(screenSize: screenSize),
+            const DestinationCarousel(),
           ],
         ),
 

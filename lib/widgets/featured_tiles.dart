@@ -1,4 +1,4 @@
-import 'package:explore_flutter_web/constants/app_constanst.dart';
+import 'package:explore_flutter_web/constants/app_constants.dart';
 import 'package:explore_flutter_web/widgets/responsive_widget.dart';
 import 'package:flutter/material.dart';
 
